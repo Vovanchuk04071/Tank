@@ -1215,7 +1215,7 @@ html:root {
 }
 .subscribe.update {
   background-image: url("../images/update.png");
-  margin: -120px 0 0 0;
+  margin: -240px 0 0 0;
   transform: translateY(50%);
   position: relative;
   z-index: 10;
@@ -1315,7 +1315,7 @@ html:root {
 .marketplace-title {
   font-size: 76px;
   position: relative;
-  padding: 0 0 0 48px;
+  padding: 0 0 0 78px;
   line-height: 1em;
 }
 .marketplace-title,
@@ -1324,12 +1324,13 @@ html:root {
 }
 .marketplace-title i {
   font-style: unset;
+  font-weight: 500;
   color: var(--dark-blue-l20);
 }
 .marketplace-title span {
   width: max-content;
   position: absolute;
-  top: 64px;
+  top: 140px;
   left: 0;
   color: var(--dark-white-d40);
   font-size: 184px;
@@ -1337,7 +1338,7 @@ html:root {
   line-height: 0.85em;
 }
 .marketplace-btn {
-  margin: var(--gap-lg) 0 0 48px;
+  margin: var(--gap-lg) 0 0 78px;
 }
 .marketplace-btn.alt {
   display: none;
@@ -1494,6 +1495,7 @@ html:root {
   position: relative;
 }
 .screen-title {
+  text-align: end;
   width: min-content;
   position: absolute;
   top: 0;
@@ -1505,9 +1507,10 @@ html:root {
   line-height: 1em;
   z-index: -1;
 }
+
 .screen-img {
   width: 100%;
-  padding: 248px 0 0 0 !important;
+  padding: 360px 0 0 0 !important;
 }
 @media (max-width: 768px) {
   .screen-container {
@@ -1533,8 +1536,9 @@ html:root {
   align-items: flex-start;
   margin: var(--gap-md) 0 0 0;
 }
+
 .team-members {
-  margin: var(--gap-lg) 0 0 0;
+  margin: 70px -90px 0 -30px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -1583,7 +1587,7 @@ html:root {
 }
 .team-title {
   width: calc(50% - var(--gap-md));
-  padding: 0 0 0 48px;
+  padding: 0 0 0 70px;
   position: relative;
   font-size: 82px;
 }
@@ -1593,6 +1597,8 @@ html:root {
 }
 .team-title,
 .team-title * {
+  font-weight: 500;
+  line-height: 50px;
   font-family: "evil_empire", sans-serif;
 }
 .team-title span {
@@ -1690,13 +1696,14 @@ html:root {
 .roadmap-title {
   position: relative;
   font-size: 74px;
-  padding: 0 0 0 74px;
+  padding: 0 0 0 80px;
 }
 .roadmap-title i {
   color: var(--dark-blue-l20);
 }
 .roadmap-title,
 .roadmap-title * {
+  font-weight: 500;
   font-family: "evil_empire", sans-serif;
   font-style: unset;
 }
@@ -1705,7 +1712,7 @@ html:root {
   line-height: 0.85em;
   position: absolute;
   top: -32px;
-  left: 0;
+  left: 2px;
   z-index: -1;
   color: var(--dark-pink-bg);
   width: min-content;
@@ -1759,7 +1766,7 @@ html:root {
   border: 4px solid var(--dark-pink-main);
 }
 .roadmap-slider {
-  margin: calc(var(--gap-xl) + 44px) 0 0 0;
+  margin-top: 12px;
   overflow: hidden;
   position: relative;
 }
@@ -1887,7 +1894,7 @@ html:root {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--gap-lg);
+  margin-bottom: 150px;
 }
 .partners-slider {
   width: 100%;
@@ -1900,6 +1907,7 @@ html:root {
   flex-wrap: wrap;
   transition: transform ease var(--transition);
 }
+
 .partners-slider-item {
   width: 20%;
   padding: calc(var(--gap-md) / 2);
@@ -1936,15 +1944,7 @@ html:root {
   height: 100%;
   object-fit: contain;
 }
-.partners-title {
-  width: calc(46% - var(--gap-md));
-  font-family: "evil_empire", sans-serif;
-  font-size: 64px;
-}
-.partners-title span {
-  font-family: "evil_empire", sans-serif;
-  color: var(--dark-blue-l20);
-}
+
 .partners-links {
   width: calc(46% - var(--gap-md));
   display: flex;
@@ -2030,8 +2030,30 @@ html:root {
     height: 80px;
   }
 }
+
 .partners-title {
-  font-size: 34px;
+  position: relative;
+  font-size: 74px;
+  padding: 0 0 0 80px;
+}
+.partners-titlei {
+  color: var(--dark-blue-l20);
+}
+.partners-title,
+.partners-title * {
+  font-weight: 500;
+  font-family: "evil_empire", sans-serif;
+  font-style: unset;
+}
+.partners-title span {
+  font-size: 196px;
+  line-height: 0.85em;
+  position: absolute;
+  top: -32px;
+  left: 2px;
+  z-index: -1;
+  color: var(--dark-pink-bg);
+  width: min-content;
 }
 
 .footer {

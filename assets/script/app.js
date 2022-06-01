@@ -222,7 +222,7 @@ function roadmapSlider() {
     let statesLength = outColumns + 1;
     nav.innerHTML = state.repeat(statesLength);
     const states = nav.querySelectorAll('.roadmap-slider-map-state');
-    console.log(states)
+
     states[0].classList.add('active');
     states[0].innerHTML = `<i>2021</i>`;
     states[statesLength - 1].innerHTML = `<i>2023</i>`;
@@ -277,6 +277,7 @@ function roadmapSlider() {
             end: 'bottom top',
             scrub: true,
         },
+        // scale: 1,
         transform: `translateX(${slider.offsetWidth - image.offsetWidth}px)`,
     })
 }
