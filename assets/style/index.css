@@ -291,7 +291,7 @@ html:root {
 }
 .header-tank {
   position: absolute;
-  bottom: -13vw;
+  bottom: -16vw;
   left: 0;
   right: 0;
   z-index: -2;
@@ -743,7 +743,7 @@ html:root {
 }
 .legend-content-text {
   width: calc(52% - var(--gap-sm));
-  padding: var(--gap-xl) 0 0 0;
+  padding-top: 65px;
 }
 .legend-content-text p {
   font-family: "poppins-medium", sans-serif;
@@ -758,7 +758,7 @@ html:root {
   opacity: 0;
 }
 .legend-content-text .legend-btn {
-  margin: var(--gap-lg) 0 0 0;
+  margin-bottom: 15px;
   position: relative;
   font-family: "evil_empire", sans-serif;
   font-size: 32px;
@@ -882,7 +882,7 @@ html:root {
   cursor: pointer;
   display: block;
   z-index: 10;
-  margin-top: -140px;
+  margin-top: -170px;
   position: relative;
 }
 .legend-hand img {
@@ -1210,7 +1210,7 @@ html:root {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
-  margin: var(--gap-xl) 0;
+  margin: 196px 0;
   overflow: hidden;
 }
 .subscribe.update {
@@ -1448,6 +1448,7 @@ html:root {
 }
 
 .owl-carousel {
+  z-index: 4;
   position: relative;
 }
 .owl-carousel .owl-prev {
@@ -1483,34 +1484,61 @@ html:root {
 }
 
 .screen-container {
-  margin: var(--gap-xl) 0;
+  width: 100%;
+  padding: 0 var(--gap-sm);
+  margin: 250px auto 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
-.screen-container .owl-prev {
-  left: 84px;
+
+.mac-container {
+  width: 100%;
+  max-width: calc(1120px + var(--gap-sm) * 2);
+  position: relative;
 }
-.screen-container .owl-next {
-  right: 84px;
+
+.mac-img {
+  position: absolute;
+  width: 1465px;
+  z-index: 3;
 }
+
+.mac-background {
+  clip-path: polygon(0 0, 100% 14%, 100% 100%, 0 86%);
+  width: 100vw;
+  top: 150px;
+  position: absolute;
+  right: 0;
+  height: 709px;
+}
+.item-screen {
+  width: 855px;
+  margin: 35px 164px 0;
+}
+
 .screen .container {
   position: relative;
 }
+
 .screen-title {
-  text-align: end;
-  width: min-content;
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: var(--dark-pink-bg);
   font-family: "evil_empire", sans-serif;
-  font-size: 184px;
   font-weight: 500;
-  line-height: 1em;
+  text-transform: uppercase;
+  max-width: min-content;
+  text-align: end;
+  position: absolute;
+  right: 20px;
+  top: -175px;
+  color: var(--dark-white-d40);
+  font-size: 184px;
   z-index: -1;
+  line-height: 0.85em;
 }
 
 .screen-img {
-  width: 100%;
-  padding: 360px 0 0 0 !important;
+  width: 820px;
+  margin: 0 auto;
 }
 @media (max-width: 768px) {
   .screen-container {
@@ -1527,6 +1555,12 @@ html:root {
   }
 }
 
+.team-container {
+  width: 100%;
+  max-width: calc(1120px + var(--gap-sm) * 2);
+  padding: 0 var(--gap-sm);
+  margin: 190px auto 0;
+}
 .team {
   margin: var(--gap-xl) 0 0 0;
 }
