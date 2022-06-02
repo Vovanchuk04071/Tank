@@ -1559,7 +1559,7 @@ html:root {
   width: 100%;
   max-width: calc(1120px + var(--gap-sm) * 2);
   padding: 0 var(--gap-sm);
-  margin: 190px auto 0;
+  margin: 750px auto 0;
 }
 .team {
   margin: var(--gap-xl) 0 0 0;
