@@ -77,8 +77,9 @@ html:root {
 
 .container {
     width: 100%;
-    max-width: calc(1120px + var(--gap-sm) * 2);
+    position: relative;
     margin: 0 auto;
+    max-width: calc(1120px + var(--gap-sm) * 2);
     padding: 0 var(--gap-sm);
 }
 
@@ -2066,6 +2067,7 @@ html:root {
 
 .roadmap {
     padding: calc(var(--gap-xl) * 1.5) 0 0 0;
+    position: relative;
 }
 
 .roadmap-title {
@@ -2142,7 +2144,7 @@ html:root {
     content: "";
     position: absolute;
     top: 50%;
-    left: calc(var(--gap-lg) - 14px);
+    left: calc(var(--gap-lg) - 30px);
     transform: translate(-50%, -50%);
     width: 12px;
     height: 12px;

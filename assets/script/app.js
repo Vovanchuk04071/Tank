@@ -238,6 +238,7 @@ function roadmapSlider() {
     image.style.width = `${(allColumns / columns) * 100}%`;
     outColumns = allColumns - columns;
     moveSize = menus[0].scrollWidth / page.scrollWidth;
+    console.log(columns, page, image, moveSize, menus);
     for (let menu of menus) {
       menu.style.width = `${100 / allColumns}%`;
     }
@@ -277,11 +278,15 @@ function roadmapSlider() {
       }
     }
   });
-
+  console.log(
+    slider.offsetWidth,
+    image.offsetWidth,
+    image.offsetWidth - slider.offsetWidth
+  );
   gsap
     .to(".roadmap-slider-img", {
       scrollTrigger: {
-        trigger: ".roadmap-slider",
+        trigger: ".roadmap",
         start: "top bottom",
         end: "bottom top",
         scrub: true,
