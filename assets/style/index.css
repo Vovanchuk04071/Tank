@@ -77,8 +77,9 @@ html:root {
 
 .container {
     width: 100%;
-    max-width: calc(1120px + var(--gap-sm) * 2);
+    position: relative;
     margin: 0 auto;
+    max-width: calc(1120px + var(--gap-sm) * 2);
     padding: 0 var(--gap-sm);
 }
 
@@ -2066,6 +2067,7 @@ html:root {
 
 .roadmap {
     padding: calc(var(--gap-xl) * 1.5) 0 0 0;
+    position: relative;
 }
 
 .roadmap-title {
@@ -2142,7 +2144,7 @@ html:root {
     content: "";
     position: absolute;
     top: 50%;
-    left: calc(var(--gap-lg) - 14px);
+    left: calc(var(--gap-lg) - 30px);
     transform: translate(-50%, -50%);
     width: 12px;
     height: 12px;
@@ -2151,9 +2153,31 @@ html:root {
     border: 4px solid var(--dark-pink-main);
 }
 
+.roadmap-menu-overline-left {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 409px;
+    width: 412px;
+    height: 2px;
+    background-image: linear-gradient(to right, var(--dark-pink-main), var(--dark-white-d40), var(--dark-pink-main));
+}
+
+.roadmap-menu-overline-right {
+    position: absolute;
+    right: 0;
+    top: 409px;
+    width: 383px;
+    height: 2px;
+    background-image: linear-gradient(to right, var(--dark-pink-main), var(--dark-white-d40), var(--dark-pink-main));
+}
+
 .roadmap-slider {
     overflow: hidden;
     position: relative;
+    width: 100%;
+    max-width: calc(1120px + var(--gap-sm) * 2);
+    margin: 20px auto 0;
 }
 
 .roadmap-slider-page {
