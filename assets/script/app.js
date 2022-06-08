@@ -287,7 +287,7 @@ function roadmapSlider() {
         scrub: true,
       },
       // scale: 1,
-      transform: `translateX(${slider.offsetWidth - image.offsetWidth}px)`,
+      transform: `translateX(-1500px)`,
     })
     .timeScale(4);
 }

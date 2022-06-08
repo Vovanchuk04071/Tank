@@ -2151,9 +2151,31 @@ html:root {
     border: 4px solid var(--dark-pink-main);
 }
 
+.roadmap-menu-overline-left {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 409px;
+    width: 353px;
+    height: 2px;
+    background-image: linear-gradient(to right, var(--dark-pink-main), var(--dark-white-d40), var(--dark-pink-main));
+}
+
+.roadmap-menu-overline-right {
+    position: absolute;
+    right: 0;
+    top: 409px;
+    width: 350px;
+    height: 2px;
+    background-image: linear-gradient(to right, var(--dark-pink-main), var(--dark-white-d40), var(--dark-pink-main));
+}
+
 .roadmap-slider {
     overflow: hidden;
     position: relative;
+    width: 100%;
+    max-width: calc(1120px + 52px * 2);
+    margin: 20px auto 0;
 }
 
 .roadmap-slider-page {
