@@ -286,7 +286,7 @@ function roadmapSlider() {
   gsap
     .to(".roadmap-slider-img", {
       scrollTrigger: {
-        trigger: ".roadmap",
+        trigger: ".roadmap-slider",
         start: "top bottom",
         end: "bottom top",
         scrub: true,
